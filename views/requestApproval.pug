@@ -1,0 +1,11 @@
+.modal
+  .modal-content
+    span.close-button &times;
+    h1.title &#xC9C4;&#xD589;&#xC0C1;&#xD669; &#xC2B9;&#xC778; &#xC694;&#xCCAD;
+    form(action='#post.php' method='POST' enctype='multipart/form-data')
+      label(for='progress') &#xC9C4;&#xD589;&#xC0C1;&#xD669;
+      input(type='progress' name='progress' placeholder='진행상황을 입력해주세요.' required='required')
+      label(for='picture') &#xC0AC;&#xC9C4;
+      input(type='file' name='FileName')
+      input#cancel(type='button' value='취소')
+      input#ok(type='button' value='보내기')
