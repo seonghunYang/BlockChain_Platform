@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+  <html>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- 뷰포트 -->
+    <meta name="viewport" content="width=device-width" initial-scale="1">
+    <!-- 스타일시트 참조  -->
+    <title>MJ mong 로그인</title>
+
+    
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+
+
+    <!-- 헤더  -->
+
+
+
+    <!-- 로그인 폼-->
+
+    <div class="container">
+      <div class="col-lg-4"></div>
+      <div class="col-lg-4">
+
+        <!-- 점보트론 -->
+        <div class="jumbotron" style="padding-top: 20px;">
+
+          <!-- 로그인 정보를 숨기면서 전송post -->
+
+          <form method="post" action="loginAction.jsp">
+            <h3 style="text-align: center;"> 로그인</h3>
+            <div class="form-group">
+              <div><label for="number">이메일</label></div>
+              <input type="text" class="form-control" placeholder="example@mjmong.com" name="userID" maxlength="20">
+            </div>
+            <div class="form-group">
+              <div><label for="number">비밀번호</label></div>
+              <input type="password" class="form-control" placeholder="비밀번호를 입력해주세요" name="userPassword" maxlength="20">
+            </div>
+            <input type="submit" class="btn btn-primary form-control" value="로그인">
+            <span class="or-text">또는</span>
+            <a href="">구글로 로그인</a>
+            <div class="check">
+              <p>
+                MJ mong 이 처음이신가요? <a href="">회원가입</a>
+              </p>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- 부트스트랩 JS  -->
+    <script src="js/bootstrap.js"></script>
+
+
+  </body>
+

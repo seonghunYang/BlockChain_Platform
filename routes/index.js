@@ -7,7 +7,15 @@ router.get("/", function (req, res, next) {
 });
 
 router.get("/progressLayout", function (req, res, next) {
-  res.render("progressLayout", { title: "progressLayout" });
+  res.render("progress/progressLayout", { title: "progressLayout" });
+});
+
+router.get("/register", function (req, res, next) {
+  res.render("register", { title: "register" });
+});
+
+router.get("/login", function (req, res, next) {
+  res.render("login");
 });
 
 module.exports = router;
