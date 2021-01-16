@@ -14,8 +14,8 @@ router.get("/register", function (req, res, next) {
   res.render("register", { title: "register" });
 });
 
-router.get("/login", function (req, res, next) {
-  res.render("login");
+router.get("/authLayout", function (req, res, next) {
+  res.render("authLayout", { title: req.query.title });
 });
 
 module.exports = router;

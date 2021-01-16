@@ -1,0 +1,47 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Document
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1' crossorigin='anonymous')
+  script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js' integrity='sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW' crossorigin='anonymous')
+  link(rel='stylesheet' href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' integrity='sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN' crossorigin='anonymous')
+  style.
+    .icons {
+    margin-left: 10%;
+    border-radius: 10%;
+    }
+.container
+  .row
+    .col-sm
+      h2
+        | &#xB531;! &#xB9DE;&#xB294; &#xC804;&#xBB38;&#xAC00;&#xB97C; 
+        br
+        | &#xC18C;&#xAC1C;&#xD574;&#xB4DC;&#xB9BD;&#xB2C8;&#xB2E4;.
+        br
+        br
+      .container
+        .input-group.mb-4.border.rounded-pill.p-1
+          //
+            <input type="search" placeholder="What're you searching for?" aria-describedby="button-addon3"
+            class="form-control bg-none border-0">
+          input.form-control.border-0.bg-light(type='search' placeholder="What're you searching for?" aria-describedby='button-addon1')
+          .input-group-append.border-0
+            button#button-addon3.btn.btn-link.text-success(type='button')
+              i.fa.fa-search
+        .row.icons
+          .col-sm
+            img(src='images/design.svg' alt='디자인' width='50px' height='50px')
+          .col-sm
+            img(src='images/develop.svg' alt='개발' width='50px' height='50px')
+          .col-sm
+            img(src='images/multimedia.svg' alt='멀티미디어' width='50px' height='50px')
+    .col-sm
+      #carouselExampleSlidesOnly.carousel.slide.carousel-fade(data-bs-ride='carousel')
+        .carousel-inner
+          .carousel-item.active
+            img.d-block.w-100(src='images/mainBg1.jpg' data-bs-interval='2000' alt='...')
+          .carousel-item
+            img.d-block.w-100(src='images/mainBg2.jpg' data-bs-interval='2000' alt='...')
+          .carousel-item
+            img.d-block.w-100(src='images/mainBg3.jpg' data-bs-interval='2000' alt='...')
