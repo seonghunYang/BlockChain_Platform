@@ -1,0 +1,44 @@
+h3 {
+  text-align: center;
+}
+
+.thumbnail {
+  display: block;
+  padding: 10px;
+  margin-bottom: 20px;
+  line-height: 1.42857143;
+  border: 1px solid lightgray;
+  border-radius: 4px;
+  -webkit-transition: border 0.2s ease-in-out;
+  -o-transition: border 0.2s ease-in-out;
+  background-color: #fff;
+  transition: border 0.2s ease-in-out;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.col-md-4 {
+  flex: 0 0 auto;
+  width: 20%;
+}
+.btn.btn-primary {
+  margin-left: 30%;
+}
+#item-image {
+  height: 180px;
+  width: 171px;
+  display: block;
+}
+#btn {
+  border-color: #efefef;
+  background-color: #efefef;
+  color: #3a3a3a;
+}
+
+#btn:hover {
+  color: #fff;
+  background-color: #83dcb7;
+  border-color: #83dcb7;
+}

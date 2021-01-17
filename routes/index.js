@@ -10,12 +10,16 @@ router.get("/progressLayout", function (req, res, next) {
   res.render("progress/progressLayout", { title: "progressLayout" });
 });
 
-router.get("/register", function (req, res, next) {
-  res.render("register", { title: "register" });
+router.get("/registerLayout", function (req, res, next) {
+  res.render("registerLayout", { title: "register" });
 });
 
 router.get("/authLayout", function (req, res, next) {
   res.render("authLayout", { title: req.query.title });
+});
+
+router.get("/storeLayout", function (req, res, next) {
+  res.render("storeLayout");
 });
 
 module.exports = router;

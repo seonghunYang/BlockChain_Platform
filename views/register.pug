@@ -1,14 +1,91 @@
 doctype html
-html
-  head
-    title= title
-    link(rel='stylesheet' href='/stylesheets/style.css')
-
-    link(href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css' type='text/css' rel='stylesheet')
-    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js' integrity='sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW' crossorigin='anonymous')
-  body
-    
-    include toolbar.pug
-    include register2.pug
-
-    script(type='text/javascript' src='/javascripts/popup.js')
+head
+  meta(charset='utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1')
+  meta(name='description' content='')
+  meta(name='author' content='Mark Otto, Jacob Thornton, and Bootstrap contributors')
+  meta(name='generator' content='Hugo 0.79.0')
+  //- title Checkout example &middot; Bootstrap v5.0
+  title= title
+  link(rel='canonical' href='https://getbootstrap.com/docs/5.0/examples/checkout/')
+  // Bootstrap core CSS
+  link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1' crossorigin='anonymous')
+  link(href='admin.css' rel='stylesheet')
+  style.
+    .container{
+    margin: 0 auto;
+    }
+    .col-md-10{
+    margin: 0 auto 100px auto ;
+    width: 50%;
+    }
+    @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+    }
+    }
+  // Custom styles for this template
+  link(href='form-validation.css' rel='stylesheet')
+.container
+  main
+    .py-5.text-center
+      h2 &#xC804;&#xBB38;&#xAC00; &#xB4F1;&#xB85D;
+      p.lead &#xC544;&#xB798; &#xC815;&#xBCF4;&#xB97C; &#xAE30;&#xC785;&#xD558;&#xC5EC; &#xC804;&#xBB38;&#xAC00;&#xAC00; &#xB418;&#xC138;&#xC694;!
+    .col-md-10
+      h4.mb-3 &#xAC00;&#xC785; &#xC815;&#xBCF4;
+      br
+      form.needs-validatio(novalidate='')
+        .row.g-3
+          .col-sm-6
+            label.form-label(for='Name') &#xC774;&#xB984;
+            input#Name.form-control(type='text' placeholder='' value='' required='')
+            .invalid-feedback
+              | &#xC774;&#xB984;&#xC744; &#xC785;&#xB825;&#xD558;&#xC138;&#xC694;
+          .col-sm-6
+            label.form-label(for='phone') &#xD734;&#xB300;&#xD3F0; &#xBC88;&#xD638;
+            input#phone.form-control(type='phone' placeholder='' value='' required='')
+            .invalid-feedback
+              | &#xD734;&#xB300;&#xD3F0; &#xBC88;&#xD638;&#xB97C; &#xC785;&#xB825;&#xD558;&#xC138;&#xC694;
+          .col-12
+            label.form-label(for='email')
+              | Email 
+              span.text-muted &#xC5F0;&#xB77D; &#xAC00;&#xB2A5; &#xC774;&#xBA54;&#xC77C;
+            input#email.form-control(type='email' placeholder='you@example.com')
+            .invalid-feedback
+              | &#xC774;&#xBA54;&#xC77C;&#xC744; &#xC785;&#xB825;&#xD558;&#xC138;&#xC694;
+          .col-12
+            label.form-label(for='address') &#xC8FC;&#xC18C;
+            input#address.form-control(type='text' placeholder='1234 Main St' required='')
+            .invalid-feedback
+              | &#xC8FC;&#xC18C;&#xB97C; &#xC785;&#xB825;&#xD558;&#xC138;&#xC694;
+          .col-12
+            label.form-label(for='address2')
+              | &#xC0C1;&#xC138;&#xC8FC;&#xC18C;
+              span.text-muted  &#xC608;) &#xAC74;&#xBB3C;&#xBA85;, &#xB3D9; &#xD638;&#xC218; 
+            input#address2.form-control(type='text' placeholder='Apartment or suite')
+          label.form-label(for='expert')
+            | &#xC804;&#xBB38; &#xBD84;&#xC57C;
+            span.text-muted
+              | (&#xC911;&#xBCF5; &#xC120;&#xD0DD; &#xAC00;&#xB2A5;)
+          br
+          .form-check.form-check-inline
+            input#inlineCheckbox1.form-check-input(type='checkbox' value='option1')
+            label.form-check-label(for='inlineCheckbox1') &#xB514;&#xC790;&#xC778;
+          .form-check.form-check-inline
+            input#inlineCheckbox2.form-check-input(type='checkbox' value='option2')
+            label.form-check-label(for='inlineCheckbox2') IT / &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D;
+          .form-check.form-check-inline
+            input#inlineCheckbox3.form-check-input(type='checkbox' value='option3')
+            label.form-check-label(for='inlineCheckbox3') &#xC601;&#xC0C1; / &#xC0AC;&#xC9C4; / &#xC74C;&#xD5A5;
+          .col-12
+            label.form-label(for='education') &#xD559;&#xB825;
+            input#education.form-control(type='text' placeholder='' required='')
+          .form-group
+            label(for='career')
+              | &#xACBD;&#xB825;
+              span.text-muted  &#xC790;&#xC720;&#xB86D;&#xAC8C; &#xAE30;&#xC785;&#xD558;&#xC138;&#xC694; 
+            textarea#career.form-control(rows='5')
+        hr.my-4
+        button.w-100.btn-outline-success.text-dark.btn-lg(type='submit') &#xC804;&#xBB38;&#xAC00; &#xB4F1;&#xB85D; &#xC644;&#xB8CC;&#xD558;&#xAE30;
+script(src='../assets/dist/js/bootstrap.bundle.min.js')
+script(src='admin.js')
