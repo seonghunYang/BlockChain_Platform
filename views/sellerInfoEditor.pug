@@ -33,13 +33,12 @@ html
   body
     include toolbar.pug
     .py-5.text-center
-      h2 &#xC804;&#xBB38;&#xAC00; &#xB4F1;&#xB85D;
-      p.lead &#xC544;&#xB798; &#xC815;&#xBCF4;&#xB97C; &#xAE30;&#xC785;&#xD558;&#xC5EC; &#xC804;&#xBB38;&#xAC00;&#xAC00; &#xB418;&#xC138;&#xC694;!
+      h2 정보수정
     .col-md-10
       .ml-2.col-sm-6
         img#preview.img-thumbnail(src='https://placehold.it/200x200' width='200px' height='200px')
       br
-      form.needs-validatio(novalidate='' action='/users/seller', method='POST')
+      form.needs-validatio(action=`/seller/${seller._id}?_method=PUT` method='POST' enctype="multipart/form-data")
         include register.pug
 
     script(type='text/javascript' src='/javascripts/popup.js')

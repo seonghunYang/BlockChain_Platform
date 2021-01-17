@@ -1,0 +1,36 @@
+.container {
+  border: 1px solid black;
+  width: 35%;
+}
+
+.row {
+  height: 150px;
+  margin: 10px;
+}
+
+.btn {
+  margin: 20px;
+  width: 90%;
+  background-color: #efefef;
+}
+
+.btn:hover {
+  color: #fff;
+  background-color: #83dcb7;
+}
+
+.label.label-default {
+  margin-top: 3%;
+}
+
+.col-xs-6.col-md-3 {
+  width: 170px;
+}
+
+#info {
+  width: 50%;
+}
+
+#image {
+  width: 90px;
+}

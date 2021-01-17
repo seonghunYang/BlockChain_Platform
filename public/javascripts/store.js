@@ -9,11 +9,23 @@ function displayMoney(event) {
   add_money.innerHTML = value + " MJC";
   total.innerHTML = Number(balance) + value + " MJC";
 
+  let deposit = document.querySelector(".deposit");
+  let withdraw = document.querySelector(".withdraw");
+  let changeWord = document.querySelectorAll(".change_word");
   let word;
   if (value < 0) {
     word = "출금";
-    let deposit = document.querySelector(".deposit");
-    let withdraw = document.querySelector(".withdraw");
-    let do = document.querySelector("span#card-header");
+    deposit.classList.remove("active");
+    withdraw.classList.add("active");
+    for (let i = 0; i < changeWord.length; i++) {
+      changeWord[i].innerHTML = word;
+    }
+  } else {
+    word = "입금";
+    deposit.classList.add("active");
+    withdraw.classList.remove("active");
+    for (let i = 0; i < changeWord.length; i++) {
+      changeWord[i].innerHTML = word;
+    }
   }
 }

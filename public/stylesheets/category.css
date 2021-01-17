@@ -26,7 +26,10 @@ section {
 .input-group-append.border-0 {
   width: 10%;
 }
-
+.icons {
+  margin-left: 10%;
+  border-radius: 10%;
+}
 #mjmong_logo {
   width: 30%;
 }

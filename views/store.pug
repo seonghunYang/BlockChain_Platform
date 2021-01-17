@@ -11,12 +11,14 @@ html(lang="en")
       .card-title.mx-auto Store
       .nav
         ul.mx-auto
-          li.active
-            a(href="#") Coin 입금
-          li
-            a(href="#") Coin 출금
+          li.active.deposit
+            | Coin 입금
+          li.withdraw
+            | Coin 출금
       form
-        span#card-header 입금하기
+        span#card-header 
+          span.change_word 입금
+          | 하기
         .row.row-1
           .col
             img.img-fluid(src="images/mjmong_logo.jpg")
@@ -29,15 +31,21 @@ html(lang="en")
           .row
             .col-sm-10
               div 나의 지갑 잔액
-              div 입금 금액
+              div 
+                span.change_word 입금
+                |  금액
             .col-sm
               .font-weight-bold.balance 0 MJC
               .font-weight-bold.add_money 0 MJC
           hr
           .row
             .col-sm-10
-              div 입금 후의 지갑 잔액
+              div 
+                span.change_word 입금
+                |  후의 지갑 잔액
             .col-sm
               .font-weight-bold.total 0 MJC
         button.pay-btn.d-flex.mx-auto
-          b 입금 요청
+          b 
+            span.change_word 입금
+            |  요청
