@@ -1,9 +1,9 @@
 .container
   p
     button#btn-review.btn.btn-primary(type='button' data-bs-toggle='collapse' data-bs-target='#demo' aria-expanded='false' aria-controls='demo')
-      | &#xB9AC;&#xBDF0; &#xC791;&#xC131;&#xD558;&#xAE30;
+      | 리뷰 작성하기
   #demo.collapse
-    h2 &#xBCC4;&#xC810;&#xC8FC;&#xAE30;
+    h2 별점 주기
     .make_star
       select#makeStar(name='')
         option(value='1') 1
@@ -19,9 +19,9 @@
         i.fas.fa-star
     hr.line
     .main
-      .main_1.main_common &#xC774;&#xBC88; &#xC8FC;&#xBB38; &#xAC74; &#xB9CC;&#xC871;&#xD588;&#xC2B5;&#xB2C8;&#xB2E4;.
+      .main_1.main_common 이번 주문 건 만족했습니다
     .last
-      a#btn-ok.btn.btn-primary(href='#' role='button') &#xD655;&#xC778;
+      a#btn-ok.btn.btn-primary(href='#' role='button') 확인
 //- // 임시
 script.
   function handleClick() {

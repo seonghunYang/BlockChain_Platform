@@ -67,6 +67,11 @@ input.btn.btn-primary.form-control {
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+input.btn.btn-primary.form-control {
+  border-color: #efefef;
+  background-color: #efefef;
+  color: #3a3a3a;
+}
 input.btn.btn-primary.form-control:hover {
   color: #fff;
   background-color: #83dcb7;
