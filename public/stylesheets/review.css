@@ -1,0 +1,45 @@
+.main {
+  background-color: #efefef;
+  border: 2px solid lightgray;
+  width: 50%;
+  height: 300px;
+}
+
+.main_common {
+  display: inline-block;
+  width: 50%;
+  height: 300px;
+}
+
+.line {
+  width: 50%;
+}
+
+.btn.btn-primary {
+  width: 130px;
+  margin-top: 10px;
+  margin-left: 40%;
+}
+
+#btn-review {
+  border-color: #efefef;
+  background-color: #efefef;
+  color: #3a3a3a;
+}
+
+#btn-review:hover {
+  color: #fff;
+  background-color: #83dcb7;
+  border-color: #83dcb7;
+}
+#btn-ok {
+  border-color: #efefef;
+  background-color: #efefef;
+  color: #3a3a3a;
+}
+
+#btn-ok:hover {
+  color: #fff;
+  background-color: #83dcb7;
+  border-color: #83dcb7;
+}

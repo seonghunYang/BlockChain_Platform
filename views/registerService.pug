@@ -1,10 +1,8 @@
 extends layout
 
 block content  
-  //- head
-    
-    //- link(rel='stylesheet' href='/stylesheets/style.css')
-      meta(charset='utf-8')
+  //- link(rel='stylesheet' href='/stylesheets/style.css')
+    meta(charset='utf-8')
   link(rel='canonical' href='https://getbootstrap.com/docs/5.0/examples/checkout/')
   //- // Bootstrap core CSS
   //- link(href='admin.css' rel='stylesheet')
@@ -23,15 +21,14 @@ block content
     }
   //- // Custom styles for this template
   //- link(href='form-validation.css' rel='stylesheet')
-  //- body
   .py-5.text-center
-    h2 전문가 등록
-    p.lead 아래 정보를 기입하여 전문가가 되세요!
+    h2 상품 및 서비스 등록
+    p.lead 아래 정보를 기입하여 새로운 상품이나 서비스를 등록하세요!
   .col-md-10
     .ml-2.col-sm-6
       img#preview.img-thumbnail(src='https://placehold.it/200x200' width='200px' height='200px')
     br
-    form.needs-validatio(novalidate='' action='/users/seller', method='POST')
-      include registerForm.pug
+    form.needs-validatio(novalidate='' action='', method='POST')
+      include registerServiceFrom.pug
   //- script(src='../assets/dist/js/bootstrap.bundle.min.js')
   //- script(src='admin.js')
