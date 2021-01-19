@@ -18,8 +18,8 @@ block content
                 //- p.card-title.my-3.fs-2= service.serviceName 
                 p.card-title.my-3.fs-2 serviceName
                 p.card-title.my-3.fs-3 price
-                a.btn.btn-lg.btn-outline-success(href=`/serviceInfoEditor`) 정보수정
-
+                if currentUser.seller
+                  a.btn.btn-outline-success(href=`/serviceInfoEditor`) 상품정보 수정
         hr
         h3.mb-4 상품 소개
         //- p.mb-3.text-break= service.serviceIntro

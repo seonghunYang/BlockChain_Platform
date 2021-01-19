@@ -59,8 +59,10 @@ block content
       //- .row
       //-   br
       .row
-    
+        link(rel="stylesheet", href="/stylesheets/categoryElement.css")
+
         - for(var i=0; i<10; i++)
           //- if i%3 == 0
           //-   .col-1
+
           include categoryElement.pug
