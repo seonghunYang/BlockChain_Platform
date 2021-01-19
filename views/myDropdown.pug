@@ -1,10 +1,7 @@
 link(rel='stylesheet' type='text/css' href='../stylesheets/myDropdown.css')
 .btn-group
   button.btn.btn-success.dropdown-toggle(type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color: #83dcb7; border: none;")
-    if currentUser.seller
-      | 이름 판매자님
-    else
-      | 이름 고객님
+    span=currentUser.name
   .dropdown-menu.dropdown-menu-end
     a.dropdown-item(href="/progressLayout") 구매진행
     if currentUser.seller
