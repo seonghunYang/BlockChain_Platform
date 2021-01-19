@@ -1,5 +1,5 @@
 #demo.collapse
-  h2 별점주기
+  h4 별점주기
   .make_star
     select#makeStar(name="")
       option(value="1") 1
@@ -13,8 +13,10 @@
       i.fas.fa-star
       i.fas.fa-star
       i.fas.fa-star
+      
   hr.line
   .main
-    .main_1.main_common 이번 주문 건 만족했습니다.
+    //- input.form-control(type="text" placeholder="솔직한 후기를 작성해주세요" name="review" maxlength="100")
+    textarea.form-control(name="review", placeholder="솔직한 후기를 작성해주세요", cols="30", rows="3")
   .last
-    a#btn-ok.btn.btn-primary(href="#" role="button")
+    a#btn-ok.btn.btn-primary(href="#" role="button") 확인

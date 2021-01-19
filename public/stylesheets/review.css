@@ -1,26 +1,38 @@
+h3 {
+  color: #efefef;
+}
+
 .main {
-  background-color: #efefef;
+  background-color: #fcf8f8;
   border: 2px solid lightgray;
-  width: 50%;
-  height: 300px;
+  width: 70%;
+  height: auto;
 }
 
 .main_common {
   display: inline-block;
-  width: 50%;
-  height: 300px;
+  width: 70%;
+  height: 100px;
 }
 
 .line {
-  width: 50%;
+  width: 70%;
 }
-
+.form-control {
+  width: 100%;
+}
 .btn.btn-primary {
-  width: 130px;
+  width: 150px;
   margin-top: 10px;
-  margin-left: 40%;
+  margin-left: 50%;
 }
 
+#w3review {
+  width: 70%;
+  height: 99.9%;
+  background-color: #fff;
+  border: 2px solid lightgray;
+}
 #btn-review {
   border-color: #efefef;
   background-color: #efefef;
