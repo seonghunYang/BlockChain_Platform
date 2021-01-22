@@ -31,6 +31,11 @@ var RequestApproval = function (_React$Component) {
   }
 
   _createClass(RequestApproval, [{
+    key: "componentDidMount",
+    value: function componentDidMount() {
+      window.addEventListener("load", this.fileHandle);
+    }
+  }, {
     key: "render",
     value: function render() {
       return React.createElement(
