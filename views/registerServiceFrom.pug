@@ -15,8 +15,22 @@
       //- textarea#serviceIntro.form-control(type='text'  required='' name="serviceIntro" rows='5')= service.serviceIntro
       textarea#serviceIntro.form-control(type='text'  required='' name="serviceIntro" rows='5')
   hr.my-4
+  .row.g-3.mt-3
+    .col-sm-6
+      label.form-label(for='numOfSteps') 거래 진행 단계 수
+      //- input#serviceName.form-control(type='text' placeholder='' value=service.serviceName required='' name="serviceName") 
+      input#numOfSteps.form-control(type='number' placeholder=''  required='' name="numOfSteps" value=1)
+      //- script.
+      //-   const numOfSteps = document.getElementById("numOfSteps");
+      //-   console.log(numOfSteps.value)
+    .col-sm-3
+      button.btn.btn-primary(type="button", data-bs-toggle="collapse", data-bs-target="#each_step", aria-expanded="false", aria-controls="each_step")
+  #each_step.row.g-3.mt-3.collapse
+    .refundForm
+  hr.my-4
   button.w-100.btn-outline-success.btn-lg(type='submit') 상품 등록 완료하기
-      
 
+script(src="javascripts/registerServiceForm.js")
+script(src="javascripts/refundForm.js")
   //- script(src='../assets/dist/js/bootstrap.bundle.min.js')
   //- script(src='admin.js')
