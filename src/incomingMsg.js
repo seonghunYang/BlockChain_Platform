@@ -2,6 +2,10 @@
 
 const e = React.createElement;
 
+
+
+
+
 class IncomingMsg extends React.Component {
   constructor(props) {
     super(props);
