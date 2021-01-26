@@ -42,6 +42,7 @@ var AcceptApproval = function (_React$Component) {
           "button",
           { className: "file-download", type: "button" },
           React.createElement("i", { className: "fa fa-download", "aria-hidden": "true" })
+          
         ),
         React.createElement(
           "div",

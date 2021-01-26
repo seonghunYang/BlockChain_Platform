@@ -9,6 +9,7 @@ var passport = require("passport");
 var passportConfig = require("./lib/passport-config"); //passport 로그인
 var flash = require("connect-flash");
 
+
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 var sellerRouter = require("./routes/seller");
@@ -84,5 +85,6 @@ app.use(function (err, req, res, next) {
   res.status(err.status || 500);
   res.render("error");
 });
+
 
 module.exports = app;
