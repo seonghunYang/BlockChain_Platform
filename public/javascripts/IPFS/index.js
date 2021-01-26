@@ -61,9 +61,6 @@ async function handlebuttons(event){
 
 
 
-
-
-
 // 'use strict'
 
 // window.addEventListener("load", async () => {
